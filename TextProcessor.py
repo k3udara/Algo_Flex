@@ -5,6 +5,7 @@ from nltk.tokenize import sent_tokenize, word_tokenize
 from nltk.probability import FreqDist
 from nltk.stem import WordNetLemmatizer
 import numpy
+#TfidfVectorizer class can calculate TF-IDF values(cosine similarity)
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
@@ -76,4 +77,4 @@ class TextProcessor:
     # Example usage
     sentence1 = "This is sentence 1."
     sentence2 = "This is sentence 2."
-    print(calculate_cosine_similarity(sentence1, sentence2))
+    print("Cosine Similarity: ", calculate_cosine_similarity(sentence1, sentence2))
