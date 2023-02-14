@@ -45,7 +45,7 @@ class TextProcessor:
     paragraphs = extract_paragraphs(text)
 
     # preprocess each paragraph and extract keywords
-    paragra
+    
     keywords = []
     for paragraph in paragraphs:
         preprocessed_paragraph = preprocess_paragraph(paragraph)
