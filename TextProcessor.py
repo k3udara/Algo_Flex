@@ -4,6 +4,9 @@ from nltk.corpus import stopwords
 from nltk.tokenize import sent_tokenize, word_tokenize
 from nltk.probability import FreqDist
 from nltk.stem import WordNetLemmatizer
+import numpy
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
 
 class TextProcessor:
     def __init__(self, text):
@@ -56,3 +59,21 @@ class TextProcessor:
     for i, paragraph_keywords in enumerate(keywords):
         print(f"Paragraph {i}:")
         print(paragraph_keywords)
+
+
+    def calculate_cosine_similarity(sentence1, sentence2):
+        # Convert sentences to a list
+        sentences = [sentence1, sentence2]
+        
+        # Calculate TF-IDF values
+        vectorizer = TfidfVectorizer()
+        tfidf_matrix = vectorizer.fit_transform(sentences)
+        
+        # Calculate cosine similarity
+        similarity = cosine_similarity(tfidf_matrix[0:1], tfidf_matrix)
+        return similarity[0][1]
+
+    # Example usage
+    sentence1 = "This is sentence 1."
+    sentence2 = "This is sentence 2."
+    print(calculate_cosine_similarity(sentence1, sentence2))
