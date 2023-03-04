@@ -1,0 +1,140 @@
+
+#containerhome {
+    height: 100vh;
+    width: 100%;
+    min-width:max-content;
+    min-height:max-content;
+    position: relative;
+    top: 0;
+    left: 0;
+    resize: both;
+    overflow: auto;
+}
+
+/* Split the screen in half */
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  /* Control the left side */
+  .left {
+    left: 0;
+    background-color: #bfbfbf5a;
+    z-index: -500;
+  }
+  
+  /* Control the right side */
+  .right {
+    right: 0;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: -500;
+  }
+
+
+  
+  /* content centered horizontally and vertically */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .centered h1 {
+    font-size: 35px;
+    margin-top: 5%;
+
+  }
+  .centered img{
+    margin-top: -15%;
+    width: 400px;
+  }
+
+
+  .right p{
+    margin-top: -15%;
+    font-size: 25px;
+  }
+
+  .description{
+    font-size: 20px;
+  }
+
+  /*Left side pdf/documents text*/
+  .pdfdoc {
+    margin-top: 5px;
+    font-size: 23px;
+  }
+
+  /*left side white panel*/
+  #leftbox {
+    font-size: 25px;
+    background-color: white;
+    text-align: center;
+    padding: 120px 20px;
+    width: 600px;
+    height: 300px;
+    min-width:fit-content;
+    position: relative;
+    
+  }
+  /*left panel para*/
+  #leftbox p {
+    height: 60px;
+  }
+
+  #para p{
+    margin-top: -15%;
+    font-size: 25px;
+  }
+  /*Right side white panel*/
+  #rightbox {
+    font-size: 25px;
+    background-color: white;
+    text-align: center;
+    padding:150px 20px;
+    width: 600px;
+    height: 300px;
+    position: relative;
+    
+  }
+
+  /*left panel para*/
+  #rightbox p{
+    margin-top: -10%;
+    height: 120px;
+  }
+  
+  
+#summarizerbtn {
+  margin-top: 38.2%;
+  margin-left: 43.5%;
+  font-size: 20px;
+  position: absolute;
+}
+
+#summarizerbtn ul{
+  list-style-type: none;
+}
+
+#summarizerbtn ul li a{
+  text-decoration: none;
+  color: white;
+  background-color: #231E92;
+  padding: 11px 40px 11px 40px;
+  border-radius: 5px;
+
+}
+
+#summarizerbtn ul li a:hover{
+  background-color: #ff6e42;
+  color: #231E92;
+  font-size: 103%;
+}

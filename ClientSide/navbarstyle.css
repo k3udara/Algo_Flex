@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(rgba(243, 139, 139, 0.854), rgba(226, 236, 136, 0.293)), url('background.jpg');/*linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5))
+    adding white layer with 50% transparency on top of it.*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 115%;
+    
+}
+
+
+/*LOGO*/
+#logo img {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    left: 2%;
+    top: -70px;
+    padding: 0;
+    z-index: 0;
+}
+
+/*Navigation Bar*/
+#navbar {
+    height: 90px;
+    width: 100%;
+    font-family: poppins;
+    top: 0;
+    left: 0;
+    background-color: #FDDFD6; /*Upper part background color*/
+    display: grid;
+    place-items: center;
+    z-index: -5;
+}
+
+
+
+
+
+/*Styling unorder list*/
+#navbar ul {
+    list-style-type: none;
+    display:flex;
+    flex-direction:row;
+    margin-left: 170px; /*Make distance from image margin to navigation bar*/
+    
+}
+
+
+
+/*Styling list set*/
+#navbar ul li {
+    font-size: 20px;
+    margin-right: 30px; /*distance between navaigation buttons*/ 
+}
+
+
+
+#navbar1 {
+    margin-right: 300px ; /*Distance from left side of navbar 2 panel*/
+    position: fixed;
+}
+
+#navbar1 ul li :hover 
+{
+    color: #ff6e42;
+    font-size: 105%;
+
+
+}
+
+
+#navbar1 ul li a {
+    text-decoration: none;
+    margin: 0 30px;
+    color: #231E92;
+    padding: 12px;
+    background-color: none;
+
+}
+
+#navbar2 {
+    margin-left: 750px;
+    position: relative;
+}
+
+#navbar2 ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    margin-left: 35px;
+    background-color: #231E92;
+    border-radius: 10px;
+
+}
+
+#navbar2 ul li a:hover
+{
+    background-color: #ff6e42;
+    color: #231E92;
+    font-size: 105%;
+    
+}
