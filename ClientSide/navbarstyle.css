@@ -63,7 +63,7 @@ body {
 
 #navbar1 {
     margin-right: 300px ; /*Distance from left side of navbar 2 panel*/
-    position: fixed;
+    position: absolute;
 }
 
 #navbar1 ul li :hover 
