@@ -4,9 +4,9 @@
 
 #upload-form {
     background-color: aliceblue;
-    width: 28%;
+    width: 35%;
     height: 40px;
-    margin-left: 8.5%;
+    margin-left: 5%;
     border-radius: 10px;
     padding: 5px;
 
@@ -22,9 +22,9 @@
 
 #summarize-form {
     background-color: aliceblue;
-    width: 28%;
+    width: 35%;
     height: 40px;
-    margin-left: 8.5%;
+    margin-left: 5%;
     border-radius: 10px;
     padding: 5px;
 }
@@ -57,20 +57,19 @@ textarea {
     resize:both;
     border-radius: 5px;
     font-size: 20px;
-    opacity: 0.9;
 }
 
 
 #para-input textarea{
-    width: 640px;
-    height: 450px;
+    height: 350px;
+    width: 510px;
     margin-left: 5%;
 }
 
 
 
-#summary-textarea{
-    height: 590px;
+#summary-display textarea{
+    height: 500px;
     width: 600px;
     margin-left: 56%;
     margin-top: -34%;
