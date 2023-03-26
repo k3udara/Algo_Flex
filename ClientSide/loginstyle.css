@@ -11,7 +11,7 @@
 body{
     display: flex;
     justify-content: center;
-    align-items: center;
+    /*align-items: center;*/
     min-height: 100vh;
     background: url("background.jpg") no-repeat;
     background-size: cover;
@@ -21,7 +21,8 @@ body{
 
 
 .wrapper {
-    position: relative;
+    position:fixed; /*change relative to fixed*/
+    margin-top: 11%;
     width: 400px;
     height: 440px;
     background: transparent;
