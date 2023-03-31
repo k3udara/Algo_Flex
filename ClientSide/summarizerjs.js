@@ -3,25 +3,60 @@ const fileInput = document.getElementById('file-input');
 const summarizeForm = document.getElementById('summarize-form');
 const keywordInput = document.getElementById('keyword-input');
 const summaryTextarea = document.getElementById('summary-textarea');
-
+const paraInput = document.getElementById("parapaste-area")
+const newBtn = document.getElementById("clickhere")
+const uploadFile = document.getElementById("uploadfile")
 let uploadedFile = null;
 
-uploadForm.addEventListener('submit', (e) => {
-  e.preventDefault();
-  uploadedFile = fileInput.files[0];
-});
+let fileAvailable = false
 
-summarizeForm.addEventListener('submit', async (e) => {
-  e.preventDefault();
-  const keyword = keywordInput.value;
-  if (uploadedFile) {
-    const text = await getFileText(uploadedFile);
-    const summary = summarizeText(text, keyword);
-    summaryTextarea.value = summary;
+
+
+async function handleSummarize(){
+  console.log(fileAvailable);
+  if(fileAvailable){
+    let ans = await getFileText(uploadedFile)
+    let splittedArr = splitArr(ans)
+    console.log(splittedArr);
+    summaryTextarea.innerText = "loading..."
+    console.log("hi");
+    console.log(paraInput.value);
+    console.log(keywordInput.value)
+    axios.post("http://127.0.0.1:8000/summarizer",{
+      
+    "searchQuery": keywordInput.value,
+    "paraArray": splittedArr
+  
+  }).then(response=>{
+  summaryTextarea.innerText = response.data
+  fileAvailable = false
+  })
+
   }
-});
+  else{
+    axios.post("http://127.0.0.1:8000/summarizer",{
+      
+    "searchQuery": keywordInput.value,
+    "paraArray": splittedArr
+  
+  }).then(response=>{
+  summaryTextarea.innerText = response.data
+  fileAvailable = false
+  })
 
-function getFileText(file) {
+  }
+  
+
+
+
+  
+}
+
+uploadFile.addEventListener("click",()=> {fileAvailable=true})
+
+newBtn.addEventListener("click",handleSummarize)
+
+async function getFileText(file) {
   return new Promise((resolve, reject) => {
     const reader = new FileReader();
     reader.onload = () => {
@@ -29,10 +64,19 @@ function getFileText(file) {
     };
     reader.onerror = reject;
     reader.readAsText(file);
-  });
+  }).then(res =>{return res});
 }
 
-function summarizeText(text, keyword) {
-  // Should replace this placeholder function with our summarization logic
-  return `Here is a summary of the text related to "${keyword}":\n\n${text.slice(0, 100)}...`;
+
+
+uploadForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  uploadedFile = fileInput.files[0];
+});
+
+function splitArr(para){
+  let tempArr = para.split(/\r?\n/)
+  return tempArr
+
 }
+
