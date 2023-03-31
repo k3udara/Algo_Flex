@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="aboutstyle.css">
     <link rel="stylesheet" href="summarizerstyle.css">
     <link rel="icon" href="Images/logo.png">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
-    <script src="summarizerjs.js"></script>
 
   </head>
 
@@ -31,14 +31,14 @@
             <ul>
                 <li><a href="Homepage.html"><b>Home</b></a></li>
                 <li><a href="Aboutus.html"><b>About</b></a></li>
-                <li><a href="contactus.html"><b>Contact</b></a></li>
+                <li><a href="#"><b>Contact</b></a></li>
             </ul>
           </div>
 
           <div id="navbar2">
             <ul>
-                <li><a href="login.html"><b>Log In</b></a></li>
-                <li><a href="#"><b>Sign Up</b></a></li>
+                <li><a href=""#""><b>Log In</b></a></li>
+                <li><a href=""#""><b>Sign Up</b></a></li>
             </ul>
           </div>
 
@@ -49,14 +49,14 @@
             <form id="upload-form">
                 <label for="file-input"><b>Upload a news article:</b></label>
                 <input type="file" id="file-input">
-                <button type="submit"><b>Upload</b></button>
+                <button id="uploadfile"  type="submit"><b>Upload</b></button>
             </form>
 
             <form id="summarize-form">
                 <label for="keyword-input"><b>Enter a keyword:</b></label>
                 <input type="text" id="keyword-input">
-                <button type="submit"> <b>Summarize</b> </button>
             </form>  
+            <button id="clickhere" >Summerize </button>
             <div id="para-input">
                 <textarea name="parapaste" id="parapaste-area" cols="30" rows="10" placeholder="Paste here"></textarea>
             </div>
@@ -65,9 +65,7 @@
                 <textarea id="summary-textarea" rows="10" cols="50" placeholder="Summarized paragraphs will display here"></textarea>
             </div>
         </div>
-
-        
-
     </div>
+    <script src="summarizerjs.js"></script>
   </body>
 </html>
