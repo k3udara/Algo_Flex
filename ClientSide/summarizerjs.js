@@ -10,6 +10,7 @@ let uploadedFile = null;
 
 let fileAvailable = false
 
+const errorText = "CNN.com will feature iReporter photos in a weekly Travel Snapshots gallery . Please submit your best shots of our featured destinations for next week . Visit CNN iReport.com/Travel next Wednesday for a new gallery of snapshots ."
 
 
 async function handleSummarize(){
@@ -19,29 +20,47 @@ async function handleSummarize(){
     let splittedArr = splitArr(ans)
     console.log(splittedArr);
     summaryTextarea.innerText = "loading..."
-    console.log("hi");
-    console.log(paraInput.value);
-    console.log(keywordInput.value)
     axios.post("http://127.0.0.1:8000/summarizer",{
       
     "searchQuery": keywordInput.value,
     "paraArray": splittedArr
   
   }).then(response=>{
-  summaryTextarea.innerText = response.data
-  fileAvailable = false
+    console.log(response.data);
+
+    if(errorText !== response){
+        summaryTextarea.innerText = response.data
+        fileAvailable = false
+        
+    }
+    else{
+        summaryTextarea.innerText = "wrong query"
+        fileAvailable = false
+    }
+
   })
 
   }
   else{
+    summaryTextarea.innerText = "loading..."
     axios.post("http://127.0.0.1:8000/summarizer",{
       
     "searchQuery": keywordInput.value,
-    "paraArray": splittedArr
+    "paraArray": [paraInput.value]
   
   }).then(response=>{
-  summaryTextarea.innerText = response.data
-  fileAvailable = false
+    console.log(response.data);
+
+    if(errorText != response){
+        summaryTextarea.innerText = response.data
+        fileAvailable = false
+        
+    }
+    else{
+        summaryTextarea.innerText = "wrong query"
+        fileAvailable = false
+    }
+
   })
 
   }
