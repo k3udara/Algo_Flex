@@ -1,0 +1,86 @@
+#content2 {
+    margin-top: 6%;
+}
+
+#upload-form {
+    background-color: aliceblue;
+    width: 28%;
+    height: 40px;
+    margin-left: 8.5%;
+    border-radius: 10px;
+    padding: 5px;
+
+}
+
+#upload-form button{
+    background-color: #FDDFD6;
+    padding: 7px;
+    border-color: aliceblue;
+    border-radius: 10px;
+}
+
+
+#summarize-form {
+    background-color: aliceblue;
+    width: 28%;
+    height: 40px;
+    margin-left: 8.5%;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#summarize-form input{
+    height: 80%;
+    font-size: 18px;
+}
+
+#summarize-form button{
+    margin-left: 45px;
+    background-color: #FDDFD6;
+    padding: 8px;
+    border-color: aliceblue;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+}
+  
+label {
+    margin-right: 10px;
+}
+  
+textarea {
+    resize:both;
+    border-radius: 5px;
+    font-size: 20px;
+    opacity: 0.9;
+}
+
+
+#para-input textarea{
+    width: 640px;
+    height: 450px;
+    margin-left: 5%;
+}
+
+
+
+#summary-textarea{
+    height: 590px;
+    width: 600px;
+    margin-left: 56%;
+    margin-top: -34%;
+}
+
+textarea::placeholder {
+    text-align: center;
+    font-size: 25px;
+}
+
+
+  
+ 

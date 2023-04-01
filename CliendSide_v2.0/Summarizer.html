@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doc Search-Bar</title>
+    <!--css links below-->
+    <link rel="stylesheet" href="navbarstyle.css">
+    <link rel="stylesheet" href="homestyle.css">
+    <link rel="stylesheet" href="aboutstyle.css">
+    <link rel="stylesheet" href="summarizerstyle.css">
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="icon" href="Images/logo.png">
+
+    <script src="summarizerjs.js"></script>
+
+  </head>
+
+  <body>
+    <div id="containerhome">
+        
+        
+        <!--logo-->
+        <div id="logo">
+            <img src="Images/logo_transparent.png" alt="Doc Search-Bar Logo">
+        </div>
+
+        <!--Navigation Bar-->
+        <div id="navbar">
+          <div id="navbar1">
+            <ul>
+                <li><a href="Homepage.html"><b>Home</b></a></li>
+                <li><a href="Aboutus.html"><b>About</b></a></li>
+                <li><a href="contactus.html"><b>Contact</b></a></li>
+            </ul>
+          </div>
+
+          <div id="navbar2">
+            <ul>
+                <li><a href="login.html"><b>Log In</b></a></li>
+            </ul>
+          </div>
+
+        </div>
+       
+        <!--Content-->
+        <div id="content2">
+            <form id="upload-form">
+                <label for="file-input"><b>Upload a news article:</b></label>
+                <input type="file" id="file-input">
+                <button type="submit" id = "uploadfile"><b>Upload</b></button>
+            </form>
+
+            <form id="summarize-form">
+                <label for="keyword-input"><b>Enter a keyword:</b></label>
+                <input type="text" id="keyword-input">
+                <button type="submit" id = "clickhere"> <b>Summarize</b> </button>
+            </form>  
+            <div id="para-input">
+                <textarea name="parapaste" id="parapaste-area" cols="30" rows="10" placeholder="Paste here"></textarea>
+            </div>
+
+            <div id="summary-display">
+                <textarea id="summary-textarea" rows="10" cols="50" placeholder="Summarized paragraphs will display here"></textarea>
+            </div>
+        </div>
+
+        
+
+    </div>
+  </body>
+</html>
