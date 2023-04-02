@@ -36,19 +36,19 @@
     <div class="wrapper">
         <span class="icon-close">
             <ion-icon name="close"></ion-icon>
-        </span>
-
+        </span>        
         <div class="from-box login">
             <h2> Login</h2>
-            <form action="#">
+
+            <form action="Login01.php" method="post">
                 <div class="input-box">
                     <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                    <input type="email" required>
+                    <input type="email" name="email" required>
                     <label >Email</label>
                 </div>
                 <div class="input-box">
                     <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                    <input type="password" required>
+                    <input type="password" name="password" required >
                     <label >Password</label>
                 </div>
                 <div class="remember-forgot">
@@ -62,26 +62,28 @@
                 </div>
             </form>
         </div>
+        
 
         <div class="from-box register">
             <h2> Registration</h2>
-            <form action="#">
+            <!-- <form action="#"> -->
+            <form method="post" action="connect.php">    
                 <div class="input-box">
                     <span class="icon">
                         <ion-icon name="person"></ion-icon>
                     </span>
-                    <input type="text" required>
-                    <label >Username</label>
+                    <input type="text" id="username" name="username" />
+                    <label for="username">Username</label>
                 </div>
                 <div class="input-box">
                     <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                    <input type="email" required>
-                    <label >Email</label>
+                    <input type="email" id="email" name="email" required/>
+                    <label for="email">Email</label>
                 </div>
                 <div class="input-box">
                     <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                    <input type="password" required>
-                    <label >Password</label>
+                    <input type="password" id="password" name="password" required/>
+                    <label for="password">Password</label>
                 </div>
                 <div class="remember-forgot">
                     <label><input type="checkbox">
