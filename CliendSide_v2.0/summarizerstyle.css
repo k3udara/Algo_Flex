@@ -1,10 +1,10 @@
 #content2 {
-    margin-top: 6%;
+    margin-top: 10px;
 }
 
 #upload-form {
     background-color: aliceblue;
-    width: 28%;
+    width: 500px;
     height: 40px;
     margin-left: 8.5%;
     border-radius: 10px;
@@ -22,7 +22,7 @@
 
 #summarize-form {
     background-color: aliceblue;
-    width: 28%;
+    width: 500px;
     height: 40px;
     margin-left: 8.5%;
     border-radius: 10px;
@@ -46,7 +46,7 @@ form {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
   
 label {
@@ -62,7 +62,7 @@ textarea {
 
 
 #para-input textarea{
-    width: 640px;
+    width: 600px;
     height: 450px;
     margin-left: 5%;
 }
@@ -70,17 +70,47 @@ textarea {
 
 
 #summary-textarea{
-    height: 590px;
+    height: 550px;
     width: 600px;
     margin-left: 56%;
-    margin-top: -34%;
+    margin-top: -750px;
 }
 
 textarea::placeholder {
     text-align: center;
-    font-size: 25px;
+    font-size: 18px;
+}
+
+/*Hidden Button styling*/
+#btnHolder{
+    margin-left:45%;
+    margin-top: -30px;
+    text-decoration: none;
+    width: 80px;
+    background-color: #FDDFD6;
+    border: none;
+    border-radius: 5px;
+
+}
+
+#btnHolder button{
+    padding: 5px;
+    background-color: #FDDFD6;
+    border: none;
+    padding: 10px 0 10px 0; 
+}
+
+#btnHolder:hover{
+    background-color: #ff8b68;
+}
+
+#btnHolder button:hover{
+    background-color: #ff8b68;
 }
 
 
+#btnHolder a{
+    text-decoration: none;
+}
   
  

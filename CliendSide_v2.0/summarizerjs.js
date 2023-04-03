@@ -4,7 +4,7 @@ const summarizeForm = document.getElementById('summarize-form');
 const keywordInput = document.getElementById('keyword-input');
 const summaryTextarea = document.getElementById('summary-textarea');
 const paraInput = document.getElementById("parapaste-area")
-const newBtn = document.getElementById("clickhere")
+const newBtn = document.getElementById("summarize-btn") //Just changed clickhere id to summarize-btn
 const uploadFile = document.getElementById("uploadfile")
 let uploadedFile = null;
 

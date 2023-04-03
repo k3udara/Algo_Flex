@@ -10,12 +10,35 @@
     <link rel="stylesheet" href="homestyle.css">
     <link rel="stylesheet" href="aboutstyle.css">
     <link rel="stylesheet" href="summarizerstyle.css">
-	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <link rel="icon" href="Images/logo.png">
-
     <script src="summarizerjs.js"></script>
+    <script>
+      function changeVisibility() {
+      document.getElementById("upload-form").style.visibility = "hidden";
+      document.getElementById("summarize-form").style.visibility = "hidden";
+      document.getElementById("para-input").style.visibility = "hidden";
+      } 
+      
+      function addBtn(){
+        document.getElementById('btnHolder').innerHTML = '<a href="Summarizer.html"><button><b>Try Again</b></button></a>';
+      }
 
-  </head>
+      function myFunction() {
+        var x = document.getElementById("btnHolder");
+        if (x.style.display === "none") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+      
+    </script>
+
+  
+
+
+</head>
 
   <body>
     <div id="containerhome">
@@ -44,19 +67,37 @@
 
         </div>
        
+        
         <!--Content-->
         <div id="content2">
+
             <form id="upload-form">
-                <label for="file-input"><b>Upload a news article:</b></label>
+                <label for="file-input"><b>Upload the document:</b></label>
                 <input type="file" id="file-input">
                 <button type="submit" id = "uploadfile"><b>Upload</b></button>
             </form>
+            <button id="btnHolder"></button>
 
             <form id="summarize-form">
-                <label for="keyword-input"><b>Enter a keyword:</b></label>
-                <input type="text" id="keyword-input">
-                <button type="submit" id = "clickhere"> <b>Summarize</b> </button>
+              <label for="keyword-input"><b>Enter keyword:</b></label>
+              <input type="text" id="keyword-input">
+              <button type="submit" id="summarize-btn" onclick="changeVisibility(); javascript:addBtn(); myFunction();"> <b>Summarize</b> </button>
+            
+              
+              <script>
+                const myButton = document.getElementById('summarize-btn');
+
+                myButton.addEventListener('click', function(event) {
+                // Stop the page from refreshing
+                event.preventDefault();
+
+                
+                alert('Processing!');
+                });
+              </script>
             </form>  
+
+
             <div id="para-input">
                 <textarea name="parapaste" id="parapaste-area" cols="30" rows="10" placeholder="Paste here"></textarea>
             </div>

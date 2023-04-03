@@ -72,7 +72,7 @@
     font-size: 23px;
   }
 
-  /*left side white panel*/
+  /*left side panel*/
   #leftbox {
     font-size: 25px;
     background-color: rgba(197, 135, 135, 0.723);
@@ -93,7 +93,7 @@
     margin-top: -5%;
     font-size: 25px;
   }
-  /*Right side white panel*/
+  /*Right side panel*/
   #rightbox {
     font-size: 25px;
     background-color: rgba(197, 135, 135, 0.723);
@@ -105,7 +105,7 @@
     
   }
 
-  /*left panel para*/
+  /*Right panel para*/
   #rightbox p{
     margin-top: -10%;
     height: 120px;
@@ -138,4 +138,209 @@
   font-size: 103%;
 }
 
+/*Adding Footer*/
 
+#footer {
+  background-color: #685454;
+  color: #fffefd;
+  padding: 20px;
+  text-align: center;
+  margin-top: 450px;
+  }
+  
+  .copyright{
+  
+  margin-bottom: 20px;
+  }
+  
+  
+  .copyright p{
+  
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  
+  }
+  
+  
+  .social-media {
+  margin-bottom: 20px;
+  
+  
+  }
+  
+  .social-media p {
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  }
+  
+  .social-media a {
+  color:
+  #DC7633 ;
+  font-size: 24px;
+  margin: 200px 50px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  align-items: center;
+  justify-content: center;
+  
+  }
+  
+  .social-media a:hover {
+  transform: scale(1.2);
+  }
+  
+  .powered-by {
+  font-size: 12px;
+  margin-top: 20px;
+  }
+  
+  .powered-by p{
+  
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+  
+  }
+  
+  .powered-by a {
+  color: #532ff6;
+  text-decoration: none;
+  }
+  
+  .powered-by a:hover {
+  text-decoration: underline;
+  }
+  
+  /*---------------end of footer stylying----------------------------*/
+
+  /* Styles for screens smaller than 768px */
+@media (max-width: 767px) {
+
+
+  #containerhome {
+    height: 100vh;
+  }
+
+  /* Adjust the height of the split sections */
+  .split {
+    height: auto;
+    width: 100%;
+    position: static;
+    padding-top: 0;
+  }
+
+
+
+  /* Adjust the styles for the left side */
+  .left {
+    width: 100%;
+    background-color: #bfbfbf5a;
+    z-index: -500;
+  }
+
+  /* Adjust the styles for the right side */
+  .right {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    z-index: -500;
+  }
+
+  /* Center the content vertically */
+  .centered {
+    top: 120%;
+    left: 50%;
+  }
+
+  /* Adjust the font sizes */
+  .centered h1 {
+    font-size: 30px;
+    margin-top: 5%;
+  }
+
+  .centered img{
+    display: none;
+  }
+
+  .right p{
+    margin-top: -15%;
+    font-size: 20px;
+  }
+
+  .description{
+    font-size: 18px;
+  }
+
+  /* Adjust the font size for the pdf/documents text */
+  .pdfdoc {
+    font-size: 20px;
+    margin-top: 10%;
+  }
+
+  /* Adjust the styles for the left panel */
+  #leftbox {
+    font-size: 20px;
+    padding: 80px 10px;
+    width: 100%;
+    height: auto;
+  }
+
+  /* Adjust the font size for the left panel para */
+  #leftbox p {
+    height: auto;
+  }
+
+  #para p{
+    margin-top: 450%;
+    font-size: 20px;
+  }
+
+  /* Adjust the styles for the right panel */
+  #rightbox {
+    font-size: 20px;
+    padding: 120px 10px;
+    width: 100%;
+    height: auto;
+  }
+
+  /* Adjust the font size for the right panel para */
+  #rightbox p{
+    margin-top: -15%;
+    height: auto;
+  }
+
+  /* Adjust the position of the summarizer button */
+  #summarizerbtn {
+    margin-top: 220%;
+    margin-left: 40%;
+    font-size: 18px;
+  }
+
+  /* Adjust the font size and padding of the button */
+  #summarizerbtn ul li a{
+    padding: 8px 25px;
+    font-size: 18px;
+  }
+
+
+  #footer{
+    margin-top: 700px;
+
+  }
+  /* Adjust the margin of the social media links */
+  .social-media a {
+    margin: 0 10px;
+  }
+
+  /* Adjust the font size and margin of the powered by section */
+  .powered-by {
+    font-size: 10px;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+  .powered-by p{
+    margin-bottom: 5px;
+  }
+}
