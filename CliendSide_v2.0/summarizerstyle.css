@@ -112,5 +112,24 @@ textarea::placeholder {
 #btnHolder a{
     text-decoration: none;
 }
-  
+
+
+/*Mobile view*/
+@media (max-width: 767px) {
+
+    #para-input textarea{
+        width: 500px;
+        height: 500px;
+        margin-left: 8%;
+    }
+
+    #summary-textarea{
+        height: 500px;
+        width: 500px;
+        margin-left:8%;
+        margin-top: 15px;
+    }
+
+    
+}
  

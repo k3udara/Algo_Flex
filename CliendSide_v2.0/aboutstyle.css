@@ -91,3 +91,64 @@
     color: #362E59;
 }
 
+
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 767px) {
+    #panel {
+        width: 90%;
+        height: 70%;
+        left: 5%;
+        top: 45%;
+    }
+    #logoinpanel img{
+        display: none;
+    }
+    #panel p{
+        left: 40%;
+        font-size: 25px;
+        line-height: 50px;
+    }
+    /* Arrow Styles */
+    .arrow-left {
+        z-index: 10;
+        font-size:40px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2px 7px;
+        gap: 10px;
+
+        position: absolute;
+        width: 59.04px;
+        height: 54px;
+        left: 100px;
+        top: 325px;
+
+        background: rgba(160, 152, 204, 0.8);
+        border-radius: 10px;
+    }
+
+    .arrow-left a{
+        text-decoration: none;
+    }
+    .arrow-left:hover{
+        background-color: rgba(109, 95, 190, 0.8);
+    }
+
+    .arrow-left a:active{
+    color: cyan;
+    }
+    
+
+    #about-description {
+        width: 90%;
+        height: 300px;
+        left: 5%;
+        top: 80%;
+        transform: translateY(-50%);
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: 0;
+    }
+}

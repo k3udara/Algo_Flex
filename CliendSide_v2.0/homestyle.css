@@ -145,7 +145,7 @@
   color: #fffefd;
   padding: 20px;
   text-align: center;
-  margin-top: 450px;
+  margin-top: 880px;
   }
   
   .copyright{
@@ -292,7 +292,7 @@
   }
 
   #para p{
-    margin-top: 450%;
+    margin-top: 550%;
     font-size: 20px;
   }
 
@@ -312,8 +312,8 @@
 
   /* Adjust the position of the summarizer button */
   #summarizerbtn {
-    margin-top: 220%;
-    margin-left: 40%;
+    margin-top: 300%;
+    margin-left: 32%;
     font-size: 18px;
   }
 
@@ -325,7 +325,7 @@
 
 
   #footer{
-    margin-top: 700px;
+    margin-top: 200px;
 
   }
   /* Adjust the margin of the social media links */

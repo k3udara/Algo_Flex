@@ -243,6 +243,106 @@ body p {
 }
 
 
+@media only screen and (max-width: 767px) {
+
+  .column1 {
+    width: 100%;
+    float: none;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .imgdiv {
+    margin-top: 50px;
+  }
+
+  body p{
+    width: 60%;
+    margin-left: 7%;
+  }
+
+  #boxA {
+    width: 75%;
+    margin: 0;
+    margin-top: 10%;
+    border-style: none;
+    border-radius: 0;
+    float: none;
+    background-color: rgba(241, 159, 113, 0.58);
+    margin-left: 0;
+  }
+
+  .boxB {
+    min-height: 0;
+    margin-top: 10%;
+    padding: 0;
+  }
+
+  .boxB h1 {
+    font-size: 30px;
+  }
+
+  .boxB .xbox {
+    display: none;
+    margin-top: 5%;
+  }
+
+  .boxB .form {
+    margin-top: 5%;
+  }
+
+  .boxB .field input,
+  .boxB .field select,
+  .boxB textarea {
+    width: 50%;
+  }
+
+  .boxB .button3 button[type="submit"] {
+    width: 100%;
+  }
+
+  .button2 {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .boxB .popup {
+    width: 100%;
+    min-height: 200px;
+    padding: 10px;
+  }
+
+  .boxB #confirm {
+    min-height: 0;
+    margin-top: 0;
+  }
+
+  .boxB #confirm a {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .boxB .error {
+    margin-left: 0;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 
