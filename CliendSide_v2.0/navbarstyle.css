@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap");
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "EB Garamond", serif;
 }
 
 body {
@@ -92,7 +95,7 @@ body {
 #navbar2 ul li a {
     text-decoration: none;
     color: white;
-    padding: 10px 20px 10px 20px;
+    padding: 10px 20px;
     margin-left: 35px;
     background-color: #231E92;
     border-radius: 10px;
@@ -179,6 +182,9 @@ body {
       font-size: 105%;
   }
 }
+
+
+
 
   
     

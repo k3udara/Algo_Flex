@@ -259,7 +259,7 @@ body p {
 
   body p{
     width: 60%;
-    margin-left: 7%;
+    margin-left: 15%;
   }
 
   #boxA {
@@ -270,7 +270,7 @@ body p {
     border-radius: 0;
     float: none;
     background-color: rgba(241, 159, 113, 0.58);
-    margin-left: 0;
+    margin-left: 10%;
   }
 
   .boxB {

@@ -222,4 +222,16 @@ body{
     .btn {
     font-size: 0.9em;
     }
+}
+
+
+@media only screen and (max-width: 450px) {
+    .wrapper {
+    margin-top: 75%;
+    width: 80%;
+    height: auto;
+    max-height: 100vh;
     }
+}
+
+

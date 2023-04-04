@@ -1,7 +1,6 @@
 #containerhome {
     height: 100vh;
     width: 100%;
-    min-width:max-content;
     min-height:max-content;
     position: relative;
     top: 0;
@@ -80,7 +79,6 @@
     padding: 120px 20px;
     width: 600px;
     height: 300px;
-    min-width:fit-content;
     position: relative;
     
   }
@@ -90,7 +88,7 @@
   }
 
   #para p{
-    margin-top: -5%;
+    margin-top: 1%;
     font-size: 25px;
   }
   /*Right side panel*/
@@ -205,7 +203,7 @@
   }
   
   .powered-by a {
-  color: #532ff6;
+  color: #beb0ff;
   text-decoration: none;
   }
   
@@ -215,12 +213,12 @@
   
   /*---------------end of footer stylying----------------------------*/
 
-  /* Styles for screens smaller than 768px */
-@media (max-width: 767px) {
+  /* Styles for screens smaller than 767px */
+@media only screen and (max-width: 767px) {
 
 
   #containerhome {
-    height: 100vh;
+    height: 120vh;
   }
 
   /* Adjust the height of the split sections */
@@ -233,12 +231,7 @@
 
 
 
-  /* Adjust the styles for the left side */
-  .left {
-    width: 100%;
-    background-color: #bfbfbf5a;
-    z-index: -500;
-  }
+  
 
   /* Adjust the styles for the right side */
   .right {
@@ -249,7 +242,7 @@
 
   /* Center the content vertically */
   .centered {
-    top: 120%;
+    top: 85%;
     left: 50%;
   }
 
@@ -267,6 +260,7 @@
     margin-top: -15%;
     font-size: 20px;
   }
+  
 
   .description{
     font-size: 18px;
@@ -292,7 +286,7 @@
   }
 
   #para p{
-    margin-top: 550%;
+    margin-top: 300%;
     font-size: 20px;
   }
 
@@ -312,8 +306,8 @@
 
   /* Adjust the position of the summarizer button */
   #summarizerbtn {
-    margin-top: 300%;
-    margin-left: 32%;
+    margin-top: 170%;
+    margin-left: 38%;
     font-size: 18px;
   }
 
@@ -343,4 +337,220 @@
   .powered-by p{
     margin-bottom: 5px;
   }
+}
+
+
+@media only screen and (max-width: 690px) {
+  .centered {
+    top: 80%;
+    left: 50%;
+  }
+
+  /* Adjust the font sizes */
+  .centered h1 {
+    font-size: 30px;
+    margin-top: 5%;
+  }
+
+  .centered img{
+    display: none;
+  }
+
+  .right p{
+    margin-top: -15%;
+    font-size: 20px;
+  }
+  
+
+  .description{
+    font-size: 18px;
+  }
+
+  /* Adjust the font size for the pdf/documents text */
+  .pdfdoc {
+    font-size: 20px;
+    margin-top: 10%;
+  }
+
+  /* Adjust the styles for the left panel */
+  #leftbox {
+    font-size: 20px;
+    padding: 80px 10px;
+    width: 100%;
+    height: auto;
+  }
+
+  /* Adjust the font size for the left panel para */
+  #leftbox p {
+    height: auto;
+  }
+
+  #para p{
+    margin-top: 380%;
+    font-size: 20px;
+  }
+
+  
+
+  /* Adjust the position of the summarizer button */
+  #summarizerbtn {
+    margin-top: 240%;
+    margin-left: 35%;
+    font-size: 18px;
+  }
+
+  /* Adjust the font size and padding of the button */
+  #summarizerbtn ul li a{
+    padding: 8px 25px;
+    font-size: 18px;
+  }
+
+}
+
+
+@media only screen and (max-width: 585px) {
+  
+  .centered {
+    top: 100%;
+    left: 50%;
+  }
+
+  /* Adjust the font sizes */
+  .centered h1 {
+    font-size: 30px;
+    margin-top: 5%;
+  }
+
+  .centered img{
+    display: none;
+  }
+
+  .right p{
+    margin-top: -15%;
+    font-size: 20px;
+  }
+  
+
+  .description{
+    font-size: 18px;
+  }
+
+  /* Adjust the font size for the pdf/documents text */
+  .pdfdoc {
+    font-size: 20px;
+    margin-top: 10%;
+  }
+
+  /* Adjust the styles for the left panel */
+  #leftbox {
+    font-size: 20px;
+    padding: 80px 10px;
+    width: 100%;
+    height: auto;
+  }
+
+  /* Adjust the font size for the left panel para */
+  #leftbox p {
+    height: auto;
+  }
+
+  #para p{
+    margin-top: 600%;
+    font-size: 20px;
+  }
+
+  
+
+  /* Adjust the position of the summarizer button */
+  #summarizerbtn {
+    margin-top: 350%;
+    margin-left: 30%;
+    font-size: 18px;
+  }
+
+  /* Adjust the font size and padding of the button */
+  #summarizerbtn ul li a{
+    padding: 8px 25px;
+    font-size: 18px;
+  }
+
+  #footer{
+    margin-top: 200px;
+
+  }
+
+}
+
+
+@media only screen and (max-width: 442px) {
+  
+  .centered {
+    top: 110%;
+    left: 50%;
+  }
+
+  /* Adjust the font sizes */
+  .centered h1 {
+    font-size: 30px;
+    margin-top: 5%;
+  }
+
+  .centered img{
+    display: none;
+  }
+
+  .right p{
+    margin-top: -15%;
+    font-size: 20px;
+  }
+  
+
+  .description{
+    font-size: 18px;
+  }
+
+  /* Adjust the font size for the pdf/documents text */
+  .pdfdoc {
+    font-size: 20px;
+    margin-top: 10%;
+  }
+
+  /* Adjust the styles for the left panel */
+  #leftbox {
+    font-size: 20px;
+    padding: 80px 10px;
+    width: 100%;
+    height: auto;
+  }
+
+  /* Adjust the font size for the left panel para */
+  #leftbox p {
+    height: auto;
+  }
+
+  #para p{
+    margin-top: 850%;
+    font-size: 20px;
+  }
+
+  
+
+  /* Adjust the position of the summarizer button */
+  #summarizerbtn {
+    margin-top: 520%;
+    margin-left: 28%;
+    font-size: 18px;
+  }
+
+  /* Adjust the font size and padding of the button */
+  #summarizerbtn ul li a{
+    padding: 8px 25px;
+    font-size: 18px;
+  }
+
+  #footer{
+    margin-top: 250px;
+
+  }
+
 }

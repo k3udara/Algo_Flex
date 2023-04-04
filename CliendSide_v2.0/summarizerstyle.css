@@ -115,7 +115,7 @@ textarea::placeholder {
 
 
 /*Mobile view*/
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
 
     #para-input textarea{
         width: 500px;
@@ -128,6 +128,141 @@ textarea::placeholder {
         height: 500px;
         width: 500px;
         margin-left:8%;
+        margin-top: 15px;
+    }
+
+    
+}
+
+
+@media only screen and (max-width: 556px) {
+
+    #upload-form {
+        background-color: aliceblue;
+        width: 420px;
+        height: 40px;
+        margin-left: 8.5%;
+        border-radius: 10px;
+        padding: 5px;
+    
+    }
+
+    #summarize-form {
+        background-color: aliceblue;
+        width: 420px;
+        height: 40px;
+        margin-left: 8.5%;
+        border-radius: 10px;
+        padding: 5px;
+    }
+
+    #summarize-form button{
+        margin-left: 20px;
+        background-color: #FDDFD6;
+        padding: 8px;
+        border-color: aliceblue;
+        border-radius: 10px;
+    }
+
+    #para-input textarea{
+        width: 400px;
+        height: 400px;
+        margin-left: 10%;
+    }
+    #summary-textarea{
+        height: 400px;
+        width: 400px;
+        margin-left:10%;
+        margin-top: 15px;
+    }
+
+    
+}
+
+
+
+@media only screen and (max-width: 556px) {
+
+    #upload-form {
+        background-color: aliceblue;
+        width: 400px;
+        height: 40px;
+        margin-left: 7%;
+        border-radius: 10px;
+        padding: 5px;
+    
+    }
+
+    #summarize-form {
+        background-color: aliceblue;
+        width: 400px;
+        height: 40px;
+        margin-left: 7%;
+        border-radius: 10px;
+        padding: 5px;
+    }
+
+    #summarize-form button{
+        margin-left: 2px;
+        background-color: #FDDFD6;
+        padding: 4px;
+        border-color: aliceblue;
+        border-radius: 10px;
+    }
+
+    #para-input textarea{
+        width: 400px;
+        height: 400px;
+        margin-left: 7%;
+    }
+    #summary-textarea{
+        height: 400px;
+        width: 400px;
+        margin-left:7%;
+        margin-top: 15px;
+    }
+
+    
+}
+
+@media only screen and (max-width: 450px) {
+
+    #upload-form {
+        background-color: aliceblue;
+        width: 360px;
+        height: 40px;
+        margin-left: 7%;
+        border-radius: 10px;
+        padding: 5px;
+    
+    }
+
+    #summarize-form {
+        background-color: aliceblue;
+        width: 360px;
+        height: 40px;
+        margin-left: 7%;
+        border-radius: 10px;
+        padding: 5px;
+    }
+
+    #summarize-form button{
+        margin-left: 2px;
+        background-color: #FDDFD6;
+        padding: 4px;
+        border-color: aliceblue;
+        border-radius: 10px;
+    }
+
+    #para-input textarea{
+        width: 360px;
+        height: 400px;
+        margin-left: 7%;
+    }
+    #summary-textarea{
+        height: 400px;
+        width: 360px;
+        margin-left:7%;
         margin-top: 15px;
     }
 
