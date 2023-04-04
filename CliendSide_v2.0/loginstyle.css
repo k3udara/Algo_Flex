@@ -195,9 +195,9 @@ body{
     text-decoration: underline;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     .wrapper {
-    margin-top: 20%;
+    margin-top: 44%;
     width: 80%;
     height: auto;
     max-height: 100vh;
@@ -208,7 +208,7 @@ body{
     }
     
     .wrapper .from-box {
-    padding: 20px;
+    padding: 40px;
     }
     
     .input-box label {
