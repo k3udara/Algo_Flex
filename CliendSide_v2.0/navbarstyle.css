@@ -115,6 +115,9 @@ body {
 
 /* Mobile View */
 @media (max-width: 767px) {
+    body{
+        background-size:cover;
+    }
   /* Navigation Bar */
   #navbar {
       height: 220px;
