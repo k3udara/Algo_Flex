@@ -3,12 +3,12 @@ const fileInput = document.getElementById('file-input');
 const summarizeForm = document.getElementById('summarize-form');
 const keywordInput = document.getElementById('keyword-input');
 const summaryTextarea = document.getElementById('summary-textarea');
-const paraInput = document.getElementById("parapaste-area")
-const newBtn = document.getElementById("summarize-btn") //Just changed clickhere id to summarize-btn
-const uploadFile = document.getElementById("uploadfile")
+const paraInput = document.getElementById("parapaste-area");
+const newBtn = document.getElementById("summarize-btn"); //Just changed clickhere id to summarize-btn
+const uploadFile = document.getElementById("uploadfile");
 let uploadedFile = null;
 
-let fileAvailable = false
+let fileAvailable = false;
 
 const errorText = "CNN.com will feature iReporter photos in a weekly Travel Snapshots gallery . Please submit your best shots of our featured destinations for next week . Visit CNN iReport.com/Travel next Wednesday for a new gallery of snapshots ."
 
